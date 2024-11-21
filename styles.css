@@ -1,0 +1,85 @@
+/* إعدادات أساسية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* الخلفية العامة */
+body {
+    background-color: #f4f4f4;
+    color: #fff;
+}
+
+/* تنسيق الهيدر */
+header {
+    background: #2c3e50; /* لون داكن */
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    background-image: url('images/background.jpg'); /* صورة خلفية مشرقة */
+    background-size: cover;
+    background-position: center;
+}
+
+header .header-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #f39c12; /* لون مشرق */
+}
+
+header .header-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+header .btn {
+    background-color: #f39c12; /* اللون المشرق */
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+header .btn:hover {
+    background-color: #e67e22; /* تأثير hover */
+}
+
+/* تنسيق المعرض */
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px;
+    gap: 20px;
+}
+
+.gallery .image-item {
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.gallery .image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery .image-item img:hover {
+    transform: scale(1.05); /* تكبير الصورة عند التمرير */
+}
+
+/* تنسيق الفوتر */
+footer {
+    background-color: #34495e; /* لون داكن */
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    font-size: 1em;
+}
